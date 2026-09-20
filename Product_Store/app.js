@@ -78,9 +78,8 @@ const outOfStock =
 let allProducts = [];
 
 
-// -----------------------------
+
 // Display Products
-// -----------------------------
 
 function displayProducts(productList) {
 
@@ -171,9 +170,7 @@ function displayProducts(productList) {
 }
 
 
-// -----------------------------
 // Update statistics
-// -----------------------------
 
 function updateStatistics(productsList) {
 
@@ -216,9 +213,8 @@ function updateStatistics(productsList) {
 }
 
 
-// -----------------------------
+
 // Load Products
-// -----------------------------
 
 async function loadProducts() {
 
@@ -257,9 +253,8 @@ async function loadProducts() {
 }
 
 
-// -----------------------------
-// Search by name
-// -----------------------------
+ 
+// Search by name 
 
 searchBtn.addEventListener("click", function() {
 
@@ -284,10 +279,7 @@ searchBtn.addEventListener("click", function() {
 });
 
 
-// -----------------------------
 // Filter category
-// -----------------------------
-
 categoryBtn.addEventListener("click", function() {
 
     const category =
@@ -312,9 +304,7 @@ categoryBtn.addEventListener("click", function() {
 });
 
 
-// -----------------------------
 // Filter price
-// -----------------------------
 
 priceBtn.addEventListener("click", function() {
 
@@ -340,9 +330,7 @@ priceBtn.addEventListener("click", function() {
 });
 
 
-// -----------------------------
 // Find product by ID
-// -----------------------------
 
 idBtn.addEventListener("click", function() {
 
@@ -371,9 +359,7 @@ idBtn.addEventListener("click", function() {
 });
 
 
-// -----------------------------
 // Reset
-// -----------------------------
 
 resetBtn.addEventListener("click", function() {
 
@@ -390,16 +376,12 @@ resetBtn.addEventListener("click", function() {
 });
 
 
-// -----------------------------
 // Discount example
-// -----------------------------
 
 const discountedProducts =
     applyDiscount(allProducts, 10);
 
 
-// -----------------------------
 // Start application
-// -----------------------------
 
 loadProducts();
