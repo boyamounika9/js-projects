@@ -1,4 +1,4 @@
-import products from "./products.js";
+import products from "./product.js";
 
 
 // Calculate total inventory value

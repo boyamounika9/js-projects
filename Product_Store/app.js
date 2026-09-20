@@ -2,7 +2,7 @@ import {
     findProductById,
     filterByCategory,
     filterBelowPrice
-} from "./products.js";
+} from "./product.js";
 
 
 import {
