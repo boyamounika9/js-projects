@@ -2,9 +2,9 @@ import products from "./products.js";
 
 
 // Calculate total inventory value
-export function calculateTotalValue(productList = products) {
+export function calculateTotalValue( products) {
 
-    return productList.reduce(function(total, product) {
+    return products.reduce(function(total, product) {
 
         return total + (product.price * product.stock);
 
@@ -14,9 +14,9 @@ export function calculateTotalValue(productList = products) {
 
 
 // Find most expensive product
-export function findMostExpensive(productList = products) {
+export function findMostExpensive(products) {
 
-    return productList.reduce(function(expensive, product) {
+    return products.reduce(function(expensive, product) {
 
         if (product.price > expensive.price) {
 
@@ -32,9 +32,9 @@ export function findMostExpensive(productList = products) {
 
 
 // Find out of stock products
-export function findOutOfStock(productList = products) {
+export function findOutOfStock(products) {
 
-    return productList.filter(function(product) {
+    return products.filter(function(product) {
 
         return product.stock === 0;
 
@@ -44,19 +44,19 @@ export function findOutOfStock(productList = products) {
 
 
 // Calculate average price
-export function calculateAveragePrice(productList = products) {
+export function calculateAveragePrice( products) {
 
-    if (productList.length === 0) {
+    if (products.length === 0) {
         return 0;
     }
 
-    const total = productList.reduce(function(sum, product) {
+    const total = products.reduce(function(sum, product) {
 
         return sum + product.price;
 
     }, 0);
 
-    return total / productList.length;
+    return total / products.length;
 
 }
 
